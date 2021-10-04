@@ -1,8 +1,6 @@
 :root {
   --primaryText: #666;
   --secondaryText: #999;
-  --primaryBG: #fff;
-  --boxShadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 * {

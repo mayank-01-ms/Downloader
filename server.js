@@ -35,7 +35,7 @@ app.post('/download', async (req, res) => {
         return res.status(404).send();
 
     try {
-        const response = await fetch('https://www.instagram.com/p/CJx0AucpG5_/');
+        const response = await fetch(url);
         const body = await response.text();
 
         const $ = cheerio.load(body);
