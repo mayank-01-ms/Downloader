@@ -8,9 +8,6 @@ const port = process.env.PORT || 8000;
 
 app.use(express.json());
 
-// serving frontend files
-app.use(express.static('static'));
-
 // ensuring https
 if(process.env.NODE_ENV === 'production'){
     // force https 
@@ -21,6 +18,9 @@ if(process.env.NODE_ENV === 'production'){
         next();
     });
 }
+
+// serving frontend files
+app.use(express.static('static'));
 
 // download end point
 app.post('/download', async (req, res) => {
