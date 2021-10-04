@@ -16,6 +16,13 @@ form.addEventListener('submit', e => {
 
     const url = inputField.value;
 
+    // checking for empty input
+    if(url.length == 0){
+        showErrorMsg('Please enter a valid url');
+        hideLoading();
+        return;
+    }
+
     // checking for url here
     const regex = new RegExp("^(http|https)://(www.instagram|instagram)\.(com)*");
     if(!regex.test(url)){
