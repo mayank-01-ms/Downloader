@@ -37,6 +37,7 @@ app.post('/download', async (req, res) => {
     try {
         const response = await fetch(url);
         const body = await response.text();
+        console.log(body);
 
         const $ = cheerio.load(body);
         const videoURL = $('meta[property="og:video"]').attr('content');
