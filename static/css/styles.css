@@ -1,0 +1,230 @@
+:root {
+  --primaryText: #666;
+  --secondaryText: #999;
+  --primaryBG: #fff;
+  --boxShadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+  color: var(--primaryText);
+}
+
+header {
+  height: 60px;
+  -webkit-box-shadow: 0px 2px 2px #00000010;
+          box-shadow: 0px 2px 2px #00000010;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+}
+
+header .logo {
+  margin: 0 1rem;
+}
+
+header .logo img {
+  max-width: 40px;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.container .formWrapper {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.container .formWrapper h3 {
+  margin: 1rem 0;
+}
+
+.container .formWrapper p {
+  font-size: 0.9rem;
+  color: var(--secondaryText);
+}
+
+.container .formWrapper form {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .formWrapper form input {
+  outline: none;
+  border: none;
+  border: 1px solid #99999952;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.container .formWrapper form input:focus {
+  border: 1px solid dodgerblue;
+  -webkit-box-shadow: 0px 0px 5px dodgerblue;
+          box-shadow: 0px 0px 5px dodgerblue;
+}
+
+.container .formWrapper form input::-webkit-input-placeholder {
+  font-size: 0.7rem;
+  color: var(--secondaryText);
+}
+
+.container .formWrapper form input:-ms-input-placeholder {
+  font-size: 0.7rem;
+  color: var(--secondaryText);
+}
+
+.container .formWrapper form input::-ms-input-placeholder {
+  font-size: 0.7rem;
+  color: var(--secondaryText);
+}
+
+.container .formWrapper form input::placeholder {
+  font-size: 0.7rem;
+  color: var(--secondaryText);
+}
+
+.container .formWrapper form button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: dodgerblue;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  width: 100px;
+  margin-top: 0.5rem;
+}
+
+.container .formWrapper .note {
+  font-size: 0.85rem;
+}
+
+.container .formWrapper #errorMsg {
+  color: red;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.container .formWrapper #loading {
+  margin-top: 2rem;
+  display: none;
+  text-align: center;
+}
+
+.container .formWrapper #loading span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  background: var(--primaryText);
+  -webkit-animation: animate 1s linear infinite;
+          animation: animate 1s linear infinite;
+}
+
+.container .formWrapper #loading span:nth-child(2) {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+
+.container .formWrapper #loading span:nth-child(3) {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+
+@-webkit-keyframes animate {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+@keyframes animate {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+.container .features {
+  margin-top: 2rem;
+}
+
+.container .features ul {
+  list-style: none;
+}
+
+.container .features ul li {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .features ul li .image {
+  margin-right: 0.5rem;
+}
+
+.container .features ul li .image img {
+  max-width: 35px;
+}
+
+.container .features ul li p {
+  font-size: 0.9rem;
+}
+
+.container .features ul li .description {
+  font-size: 0.85rem;
+  color: var(--secondaryText);
+}
+
+footer {
+  background: var(--primaryText);
+  color: #eee;
+  padding: 2rem 0.5rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+footer span {
+  color: #eee;
+}
+
+@media only screen and (min-width: 700px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .container {
+    max-width: 500px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="
+        Download Instagram Video, Reels, IGTV directly to Mobile and PC. Just paste the url of the content you want to download and voila!!"
+            />
+    <meta name="keywords" content="Instagram downloader, Instagram, instagram, reels, IGTV, igtv, stories, instagram posts, posts, videos" />
+    <meta property="og:title" content="Instagram Downloader " />
+    <meta property="og:description" content="
+        Download Instagram Video, Reels, IGTV directly to Mobile and PC. Just paste the url of the content you want to download and voila!!"
+            />
+    <meta name="og:image" content="/images/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://downloader-ig.herokuapp.com/">
+    <meta name="og:site_name" content="Instagram Downloader" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <title>Instagram Downloader</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        Downloader
+    </header>
+    <main>
+        <div class="container">
+            <div class="formWrapper">
+                <h3>Instagram downloader</h3>
+                <p>
+                    Download videos from instagram easily in original quality. 
+                    You can downlad reels, post videos or even IGTV videos.
+                    Just copy the URL of the post &amp; paste below.
+                </p>
+                <form action="">
+                    <input type="text" id="url" placeholder="Paste URL here">
+                    <button>Download</button>
+                </form>
+                <div id="errorMsg">
+                </div>
+                <p class="note">
+                    <strong>Note: </strong>
+                    Currently we only support downloding videos from public accounts.
+                </p>
+                <div id="loading">
+                    <p>Loading</p>
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <section class="features">
+                <h3>Features</h3>
+                <ul>
+                    <li>
+                        <div class="image">
+                            <img src="images/ads.png" alt="no ads">
+                        </div>
+                        <div class="rightCol">
+                            <p>Ad free</p>
+                            <p class="description">
+                                Enjoy unlimited video downloads with ad free experience.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="images/safe.png" alt="safe">
+                        </div>
+                        <div class="rightCol">
+                            <p>Safe</p>
+                            <p class="description">
+                                We do not store any of your information.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="images/free.png" alt="free">
+                        </div>
+                        <div class="rightCol">
+                            <p>All free</p>
+                            <p class="description">
+                                No charge. Use for free of cost.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        Disclaimer: This website is made just as a project and is not affilated with Instagram in any way.
+        <br>
+        &copy; <span id="year"></span>
+    </footer>
+</body>
+<script src="js/main.js"></script>
+</html>
